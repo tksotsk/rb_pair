@@ -37,11 +37,7 @@ class VendingMachine
     return false unless MONEY.include?(money)
     @slot_money += money
   end
-  def select_drink(juice)
-      return false unless drink.include?(juice)
-      return @juice = juice 
-  end
-
+ 
   def return_money
     puts "おつり：#{@slot_money}"
     @slot_money = 0
